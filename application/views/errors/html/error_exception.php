@@ -1,6 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178398683-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178398683-1');
+</script>
+<script data-ad-client="ca-pub-7536831447654223" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
 

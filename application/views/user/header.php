@@ -22,6 +22,16 @@
     <link rel="stylesheet" href="/static/style.css?v=<?php echo $version; ?>">
     <script src="/static/jquery.min.js"></script>
     <!-- 统计代码 -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178398683-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-178398683-1');
+    </script>
+    <script data-ad-client="ca-pub-7536831447654223" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <?php echo @$analytics; ?>
     <!-- 统计代码END -->
 </head>
@@ -44,12 +54,9 @@
                         <ul class="layui-nav" lay-filter="">
                             <li class="layui-nav-item"><a href="/home/multiple"><i class="layui-icon layui-icon-upload"></i> 多图上传</a></li>
                             <li class="layui-nav-item"><a href="/found"><i class="layui-icon layui-icon-search"></i> 探索发现</a></li>
-                            <li class="layui-nav-item"><a href="https://dwz.ovh/9" target="_blank" rel="nofollow"><i class="layui-icon layui-icon-rmb"></i> 购买专业版</a></li>
                             <li class="layui-nav-item">
-                                <a href="javascript:;" target = "_blank" rel = "nofollow"><i class="layui-icon layui-icon-tabs"></i> 其它选项</a>
                                 <dl class="layui-nav-child"> <!-- 二级菜单 -->
                                     <dd><a href="https://dwz.ovh/imgurldoc" rel = "nofollow" target = "_blank">帮助文档</a></dd>
-                                    <dd><a href="/home/log" rel = "nofollow" target = "_blank">更新日志</a></dd>
                                     <dd><a href="https://github.com/helloxz/imgurl" rel = "nofollow" target = "_blank">源码下载</a></dd>
                                 </dl>
                             </li>
@@ -58,11 +65,6 @@
                                 <li class="layui-nav-item"><a href="/admin/index"><i class="layui-icon layui-icon-console"></i> 后台管理</a></li>
                             <?php }?>
                             <!-- 简单判断用户是否登录END -->
-                        </ul>
-                    </div>
-                    <div class = "menu layui-hide-lg layui-hide-md layui-hide-sm">
-                        <ul class="layui-nav" lay-filter="">
-                            <li class="layui-nav-item"><a href="/found"><i class="layui-icon layui-icon-search"></i> 发现</a></li>
                         </ul>
                     </div>
                 </div>
